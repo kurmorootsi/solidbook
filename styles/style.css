@@ -1,0 +1,141 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+
+}
+body{
+	background-image: url("https://i.imgur.com/G1Bw3FV.png");
+	background-repeat: repeat;
+	background-color: #ddd;
+}
+textarea {
+	width: 400px;
+	height: 80px;
+	background-color: #fff;
+	resize: none;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	background-color: #222;
+}
+
+.imgdiv {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.imgdivtweet {
+	float: left;
+	margin-right: 30px;
+
+}
+
+.h1div {
+	margin-left: 300px;
+}
+
+nav ul {
+	float: right;
+	margin-top: 20px;
+	margin-right: 60px;
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+	margin-top: 5px;
+}
+
+nav ul li a {
+	color: #fff;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+nav ul form {
+	float: left;
+}
+
+nav ul form input {
+	float: left;
+	width: 100px;
+	padding: 5px 10px;
+    margin: 0px 6px;
+}
+nav ul form input:focus {
+	background-color: lightblue;
+}
+
+nav ul form button {
+	float: left;
+	border: none;
+	margin-right: 20px;
+	background-color: #fff;
+	color: #222;
+	font-size: 17px;
+	height: 29px;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	background-color: #282828;
+	border: none;
+	color: #fff;
+	font-family: arial;
+	font-weight: 400;
+	margin-bottom: 60px;
+}
+
+.signupform {
+	float: right;
+}
+
+
+.signupform input {
+	height: 30px;
+	width: 200px;
+	padding: 12px 20px;
+    	margin: 8px 0;
+}
+
+.signupform input:focus {
+	background-color: lightblue;
+}
+
+.tweet-box {
+	width: 500px;
+	height: 100px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-style: solid;
+    	border-width: 1px;
+	margin-left: 10px;
+}
+
+.tweet-box-profile {
+	width: 500px;
+	height: 100px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	border-style: solid;
+    	border-width: 1px;
+	margin-left: 300px;
+}
+
+.tweet-box p {
+	font-family: arial;
+	font-size: 14px;
+	line-height: 16px;
+	color: #282828;
+	font-weight: 100;
+}
+
+.tweet-box-write {
+	margin-left: 10px;
+}
