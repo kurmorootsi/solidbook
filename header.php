@@ -21,7 +21,7 @@
 						<li><a href='profile.php'>My Profile</a></li>
 						<form action='search.php' method='POST'>
 							<input type='text' name='profile' placeholder='Search...' autocomplete='off'>
-							<button>Search</button>
+							<button>Search...</button>
 						</form>
 
 						<form action='includes/logout.inc.php'>
