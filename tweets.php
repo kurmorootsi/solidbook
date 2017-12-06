@@ -4,12 +4,12 @@ include 'dbh.php';
 function setTweets($conn) {
 	if (isset($_POST['tweetSubmit'])) {
 		$uid = $_POST['uid'];
-		$date = $_POST['date'];
 		$tweet = $_POST['tweet'];
 		$sql = "INSERT INTO solidbook_tweets (uid, message) 
 		VALUES ('$uid', '$tweet')";
 
-		$result = mysqli_query($conn, $sql);
+		mysqli_query($conn, $sql);
+        echo mysqli_error($conn);
 	}
 }
 

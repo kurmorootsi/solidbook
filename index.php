@@ -12,7 +12,6 @@
 		echo "<h1>Welcome, ".$_SESSION['username']."!</h1>";
 		echo "<form method='post' action='".setTweets($conn)."'>
 			<input type='hidden' name='uid' value='".$_SESSION['username']."'>
-			<input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
 			<textarea name='tweet'></textarea><br>
 			<button type='submit' name='tweetSubmit'>Tweet</button>
 			</form></div></div>";
