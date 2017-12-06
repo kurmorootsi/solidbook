@@ -4,11 +4,11 @@ session_start();
 include '../dbh.php';
 
 $uid = $_POST['uid'];
-$first = $_POST['fullname'];
+$email = $_POST['email'];
 $pwd = $_POST['pwd'];
 
-$sql = "INSERT INTO solidbook_users (username, fullname, password)
-VALUES ('$uid', '$first', '$pwd')";
+$sql = "INSERT INTO solidbook_users (username, email, password)
+VALUES ('$uid', '$email', '$pwd')";
 $result = mysqli_query($conn, $sql);
 echo mysqli_error($conn);
 

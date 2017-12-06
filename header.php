@@ -22,6 +22,18 @@
             font-size: 1.2em;
             border: 0;
         }
+        body{
+            background-image: url("https://i.imgur.com/G1Bw3FV.png");
+            background-repeat: repeat;
+            background-color: #ddd;
+        }
+        input {
+            color: #000;
+        }
+        ul {
+            padding-top: 10px;
+        }
+
         .navbar-brand {
             float:left;
             min-height: 55px;
@@ -36,12 +48,37 @@
             transform: translateY(-50%);
             text-transform: uppercase;
         }
+        textarea {
+            resize: none;
+        }
+        a.button {
+            font-size: 18px;
+            color: #ffffff;
+            padding: 8px 10px;
+            border: 0px;
+            background-color: #5E4485;
+            font-family: "Times New Roman";
+            -webkit-appearance: button;
+            -moz-appearance: button;
+            appearance: button;
+
+            text-decoration: none;
+        }
+        li {
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+        .input-group {
+            width: 250px;
+            padding: 5px;
+        }
         .btn {
             font-size: 18px;
             color: #ffffff;
-            padding: 12px 22px;
+            padding: 8px 10px;
+            border: 0px;
             background-color: #5E4485;
-            border: 2px solid #FFF;
+            font-family: "Times New Roman";
         }
         #icon {
             max-width: 200px;
@@ -51,7 +88,7 @@
         footer {
             width: 100%;
             background-color: #5E4485;
-            padding: 5%;
+
             color: #FFF;
         }
         .fa {
@@ -89,54 +126,34 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-
                 </button>
-                <a class="navbar-brand" href="#"><img src="img/w3newbie.png"></a>
+                <a class="navbar-brand" href="index.php"><img src="https://i.imgur.com/8E3FWoa.png"></a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <form action='includes/login.inc.php' method='post'>
-                        <input type='text' name='uid' placeholder='Username' autocomplete='Out'>
-                        <input type='password' name='pwd' placeholder='Password'>
-                        <button type='submit'>Log In</button>
-                    </form>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><form action='index.php'>
+                            <button class='btn btn-warning'>Home</button>
+                        </form></li>
+                        <?php
+                        if (isset($_SESSION['username'])) {
+                            echo "<li><form action='profile.php'>
+                                        <button class='btn btn-warning'>My Profile</button>
+                                      </form></li>
+                                             <li><form action='search.php' method='post'>
+                                              <div class=\"input-group\">
+                                                <input type=\"text\" class=\"form-control\" placeholder=\"Search\" name='profile'>
+                                                
+                                              </div>
+                                            </form></li>
+                                  <li><form action='includes/logout.inc.php'>
+                                        <button class='btn btn-danger'>Log Out</button>
+                                      </form></li>";
+                        }
+                        ?>
+
                 </ul>
 
             </div>
         </div>
     </nav>
-
-	<nav>
-	<a href="index.php"><img src="https://i.imgur.com/8E3FWoa.png" width="180px"></a>
-			<ul>
-			<li><a href="index.php">Home</a></li>
-			<?php
-				if (isset($_SESSION['username'])) {
-					echo "
-						<li><a href='profile.php'>My Profile</a></li>
-						<form action='search.php' method='POST'>
-							<input type='text' name='profile' placeholder='Search...' autocomplete='off'>
-							<button>Search...</button>
-						</form>
-
-						<form action='includes/logout.inc.php'>
-							<button>Log Out</button>
-						</form>
-						";
-				} else {
-					echo "<form action='includes/login.inc.php' method='post'>
-				    <input type='text' name='uid' placeholder='Username' autocomplete='Out'>
-				    <input type='password' name='pwd' placeholder='Password'>
-				    <button type='submit'>Log In</button>
-						</form>
-					<li><a href='signup.php'>SIGN UP</a></li>";
-				}
-			?>
-		</ul>
-	</nav>
 </header>
-

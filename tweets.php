@@ -14,18 +14,19 @@ function setTweets($conn) {
 }
 
 function getTweets($conn) {
-	$sql = "SELECT * FROM solidbook_tweets ORDER BY date desc";
-	$result = mysqli_query($conn, $sql);
-
-	while ($row = mysqli_fetch_assoc($result)) {
-	$sql1 = "SELECT * FROM solidbook_users WHERE username='".$row['uid']."'";
-	$result1 = mysqli_query($conn, $sql1);
-	$row1 = mysqli_fetch_assoc($result1);
-		echo "<div class='tweet-box'><p>";
-		echo "<div class='imgdivtweet'><img src='". $row1['picurl'] ."' height='100' width='100'></div>";
-		echo $row['uid']."<br>";
-		echo $row['date']."<br><br>";
-		echo $row['message'];
-		echo "</p></div>";
-	}
+        $sql = "SELECT * FROM solidbook_tweets ORDER BY date desc";
+        $result = mysqli_query($conn, $sql);
+        echo "<table class='table'>";
+        while ($row = mysqli_fetch_assoc($result)) {
+            $uid = $row['uid'];
+            $sql1 = "SELECT * FROM solidbook_users WHERE username='".$uid."'";
+            $result1 = mysqli_query($conn, $sql1);
+            $row1 = mysqli_fetch_assoc($result1);
+            echo"<tr>
+                <th style='width: 100px'><img src='".$row1['picurl']."' height='100' width='100'></th>
+                <th style='width: 600px'><table width='100%'><tr><th>".$row['uid']."</th><th style='float:right;'> ".$row['date']."</th></tr></table>
+                
+                <table style='margin-top: 5px;'><tr><th>".$row['message']."</th></tr></table></th>
+                </tr>";
+        }echo "</table>";
 }
