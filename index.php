@@ -45,7 +45,42 @@ date_default_timezone_set('Europe/Helsinki');
                                     </div>";
     } else {
         echo "<div class='container'>
-<br><br><br><br><br><br><br>
+<div id='myCarousel' class='carousel slide' data-ride='carousel'>
+	<ol class='carousel-indicators'>
+		<li data-target='#myCarousel' data-slide-to='0' class='active'></li>
+		<li data-target='#myCarousel' data-slide-to='1'></li>
+		<li data-target='#myCarousel' data-slide-to='2'></li>
+	</ol>
+	<div class='carousel-inner' role='listbox'>
+		<div class='item active'>
+		<img src='img/mountains.png' style='width:100%;'>
+		<div class='carousel-caption'>
+			<h1>start right here</h1>
+			<br>
+			<button type='button' class='btn btn-default'>Sign up</button>
+		</div>
+		</div> <!---end active -->
+		<div class='item'>
+			<img src='img/snow.png' style='width:100%;'>
+			<div class='carousel-caption'>
+			<h1>already have an account?</h1>
+			<br>
+			<button type='button' class='btn btn-default'>Login</button>
+		</div>
+		</div>
+		<div class='item' style='width:100%;'>
+			<img src='img/red.png'>
+		</div>
+	</div> <!--end of carousel -->
+	<a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'>
+	<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+	<span class='sr-only'>Previous</span>
+	</a>
+	<a class='right carousel-control' href='#myCarousel' role='button' data-slide='next'>
+	<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+	<span class='sr-only'>Next</span>
+	</a>
+</div>
 <row>
     <div id='loginbox' style='margin-top:50px;' class='col-sm-6'>
         <div class='panel panel-info' >
