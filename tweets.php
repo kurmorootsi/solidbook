@@ -2,15 +2,26 @@
 include 'dbh.php';
 
 function setTweets($conn) {
-	if (isset($_POST['tweetSubmit'])) {
-		$uid = $_POST['uid'];
-		$tweet = $_POST['tweet'];
-		$sql = "INSERT INTO solidbook_tweets (uid, message) 
+    if (isset($_POST['tweetSubmit'])) {
+        $uid = $_POST['uid'];
+        $tweet = $_POST['tweet'];
+        $sql = "INSERT INTO solidbook_tweets (uid, message) 
 		VALUES ('$uid', '$tweet')";
 
-		mysqli_query($conn, $sql);
+        mysqli_query($conn, $sql);
         echo mysqli_error($conn);
-	}
+    }
+}
+
+function deleteTweets($conn, $tweet) {
+    if (isset($_POST['tweetSubmit'])) {
+        $sql = "DELETE FROM solidbook_tweets WHERE message='" . $tweet . "'";
+
+        mysqli_query($conn, $sql);
+        echo mysqli_error($conn);
+        echo "<meta http-equiv='refresh' content='0'>";
+
+    }
 }
 
 function getTweets($conn) {

@@ -28,7 +28,8 @@ date_default_timezone_set('Europe/Helsinki');
         echo "<div class='container'>
                         <div class='row'>
                             <div class='col-sm-4'>
-                                <div class='imgdiv'><img src='". $row['picurl'] ."' height='240' width='240'></div><div class='h1div'><h1>User ". $profile." <br> Total Tweets: ".$row2['total']."</h1></div><br>
+                                <div class='imgdiv'><img src='". $row['picurl'] ."' height='240' width='240'></div>
+								<div class='h1div'><h1>User ". $profile." <br> Total Tweets: ".$row2['total']."</h1></div><br>
                             </div>";
         }
         echo "<div class='col-sm-8'>";
@@ -36,7 +37,12 @@ date_default_timezone_set('Europe/Helsinki');
         while($row1 = mysqli_fetch_assoc($result1)) {
             echo"<tr>
                  <th style='width: 100px'><img src='".$row['picurl']."' height='100' width='100'></th>
-                 <th style='width: 600px'><table width='100%'><tr><th>".$row1['uid']."</th><th style='float:right;'> ".$row1['date']."</th></tr></table>
+                 <th style='width: 600px'><table width='100%'><tr><th>".$row1['uid']."</th><th style='float:right;'>
+                 <form method='post' action='".deleteTweets($conn, $row1['message'])."'>
+                    <button type='submit' name='tweetSubmit' class='btn btn-success'>X</button>
+                    </form>
+                 
+</th><th style='float:right;'> ".$row1['date']."</th></tr></table>
                  <table style='margin-top: 5px;'><tr><th>".$row1['message']."</th></tr></table></th>
                  </tr>";
         } echo "</table></div>
