@@ -57,7 +57,7 @@ date_default_timezone_set('Europe/Helsinki');
 		<div class='carousel-caption'>
 			<h1>start right here</h1>
 			<br>
-			<button type='button' class='btn btn-default'>Sign up</button>
+			<button type='button' class='btn btn-default'><a href='#A'>Sign up</a></button>
 		</div>
 		</div> <!---end active -->
 		<div class='item'>
@@ -65,7 +65,7 @@ date_default_timezone_set('Europe/Helsinki');
 			<div class='carousel-caption'>
 			<h1>already have an account?</h1>
 			<br>
-			<button type='button' class='btn btn-default'>Login</button>
+			<button type='button' class='btn btn-default'><a href='#A'>Login</a></button>
 		</div>
 		</div>
 		<div class='item' style='width:100%;'>
@@ -85,6 +85,7 @@ date_default_timezone_set('Europe/Helsinki');
 	</a>
 </div>
 <row>
+	<a name='a'></a>
     <div id='loginbox' style='margin-top:50px;' class='col-sm-6'>
         <div class='panel panel-info' >
             <div class='panel-heading'>
