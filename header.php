@@ -44,10 +44,19 @@
             background-color: #5E4485;
         }
         .carousel-caption {
-            top: 50%;
-            transform: translateY(-50%);
-            text-transform: uppercase;
-        }
+			top: 50%;
+			transform: translateY(-50%);
+			text-transform: uppercase;
+		}
+
+		.btn {
+			font-size: 18px;
+			color: #FFF;
+			padding: 12px 22px;
+			background: #5E44B5;
+			border: 2px solid #FFF;
+		}
+		
         textarea {
             resize: none;
         }

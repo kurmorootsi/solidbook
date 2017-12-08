@@ -61,7 +61,7 @@ date_default_timezone_set('Europe/Helsinki');
 		</div>
 		</div> <!---end active -->
 		<div class='item'>
-			<img src='img/snow.png' style='width:100%;'>
+			<img src='img/sunset.png' style='width:100%;'>
 			<div class='carousel-caption'>
 			<h1>already have an account?</h1>
 			<br>
@@ -69,7 +69,10 @@ date_default_timezone_set('Europe/Helsinki');
 		</div>
 		</div>
 		<div class='item' style='width:100%;'>
-			<img src='img/red.png'>
+			<img src='img/pier.png'>
+			<div class='carousel-caption'>
+			<h1>connect with your friends</h1>
+		</div>
 		</div>
 	</div> <!--end of carousel -->
 	<a class='left carousel-control' href='#myCarousel' role='button' data-slide='prev'>
