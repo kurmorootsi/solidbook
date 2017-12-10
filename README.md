@@ -1,11 +1,14 @@
-﻿veebirakenduse pic;
-Rühma liikmed:
+# SOLIDBOOK
+![alt text](https://www.upload.ee/image/7754101/pic1.JPG)
+![alt text](https://www.upload.ee/image/7754109/pic2.JPG)
+![alt text](https://www.upload.ee/image/7754123/pic3.JPG)
+### Rühma liikmed:
 Kurmo Andres Rootsi
 Daisy Pukkonen
-Eesmärk:
+### Eesmärk:
 Anda inimestele võimalus enda arvamusi avaldada. Samalaadne kõikide sotsiaalmeedia saitidega, keskendub 
 rohkem ajaviitmisele.
-Kirjeldus:
+### Kirjeldus:
 Sihtrühma otseselt ei ole, platvorm annab kõigile võimaluse oma häält kasutada ning samuti saab kustutada oma arvamusi.
 Funktsionaalsuse loetelu prioriteedi järjekorras
 1. Saab teha kasutaja ja sisselogida
@@ -15,5 +18,5 @@ Funktsionaalsuse loetelu prioriteedi järjekorras
 5. Saad otsida teiste profiile
 
 andmebaasi skeem loetava pildina + tablite loomise sql laused
-Kokkuvõte: 
+### Kokkuvõte: 
 Õppisime juurde, kuidas kasutada bootstrapi. Midagi keerulist ei olnud, lihtsalt pidi palju asju juurde õppima, millest tunnis ei ole räägitud
