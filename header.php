@@ -115,10 +115,12 @@
                 padding: 10px;
             }
         }
-        @media (max-width: 600px) {
+       
+	    @media (max-width: 600px) {
             .carousel-caption {
                 display: none;
             }
+			
             #icon {
                 max-width: 150px;
             }
