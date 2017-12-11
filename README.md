@@ -3,7 +3,7 @@
 ![alt text](https://www.upload.ee/image/7754109/pic2.JPG)
 ![alt text](https://www.upload.ee/image/7754123/pic3.JPG)
 ![alt text](https://www.upload.ee/image/7756396/huj.PNG)
-![alt text](https://www.upload.ee/thumb/7756399/uhj2.PNG)
+![alt text](https://www.upload.ee/image/7756399/uhj2.PNG)
 
 ### Rühma liikmed:
 Kurmo Andres Rootsi
