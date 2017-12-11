@@ -45,6 +45,7 @@ date_default_timezone_set('Europe/Helsinki');
                                     </div>";
     } else {
         echo "<div class='container'>
+<figure class='full-width'>
 <div id='myCarousel' class='carousel slide' data-ride='carousel'>
 	<ol class='carousel-indicators'>
 		<li data-target='#myCarousel' data-slide-to='0' class='active'></li>
@@ -84,6 +85,7 @@ date_default_timezone_set('Europe/Helsinki');
 	<span class='sr-only'>Next</span>
 	</a>
 </div>
+</figure>
 <row>
 	<a name='a'></a>
     <div id='loginbox' style='margin-top:50px;' class='col-sm-6'>

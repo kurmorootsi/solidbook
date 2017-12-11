@@ -26,6 +26,7 @@
             background-image: url("https://i.imgur.com/G1Bw3FV.png");
             background-repeat: repeat;
             background-color: #ddd;
+			overflow-x: hidden;
         }
         input {
             color: #000;
@@ -48,7 +49,20 @@
 			transform: translateY(-50%);
 			text-transform: uppercase;
 		}
-
+		
+		.full-width {
+			width: 100vw;
+			position: relative;
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+		}
+		
+		p, figure {
+			margin: 0px 0;
+		}
+		
 		.btn {
 			font-size: 18px;
 			color: #FFF;
