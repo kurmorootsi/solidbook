@@ -1,9 +1,7 @@
 # SOLIDBOOK
-![alt text](https://www.upload.ee/image/7754101/pic1.JPG)
-![alt text](https://www.upload.ee/image/7754109/pic2.JPG)
+![alt text](https://www.upload.ee/image/7756403/pic1.JPG)
+![alt text](https://www.upload.ee/image/7756406/pic2.JPG)
 ![alt text](https://www.upload.ee/image/7754123/pic3.JPG)
-![alt text](https://www.upload.ee/image/7756396/huj.PNG)
-![alt text](https://www.upload.ee/image/7756399/uhj2.PNG)
 
 ### Rühma liikmed:
 Kurmo Andres Rootsi
@@ -20,6 +18,8 @@ Funktsionaalsuse loetelu prioriteedi järjekorras
 4. Saad kustutada enda arvamust
 5. Saad otsida teiste profiile
 
-andmebaasi skeem loetava pildina + tablite loomise sql laused
+![alt text](https://www.upload.ee/image/7756396/huj.PNG)
+![alt text](https://www.upload.ee/image/7756399/uhj2.PNG)
+
 ### Kokkuvõte: 
 Õppisime juurde, kuidas kasutada bootstrapi. Midagi keerulist ei olnud, lihtsalt pidi palju asju juurde õppima, millest tunnis ei ole räägitud
