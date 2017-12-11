@@ -11,7 +11,7 @@ date_default_timezone_set('Europe/Helsinki');
 
     <?php
     if (isset($_SESSION['username'])) {
-        echo "    <div class=\"container\">
+        echo "    
                         <div class='row'>
                             <div class='col-sm-4'>
                             <h1>Welcome, ".$_SESSION['username']."!</h1>
@@ -56,17 +56,21 @@ date_default_timezone_set('Europe/Helsinki');
 		<div class='item active'>
 		<img src='img/mountains.png' style='width:100%;'>
 		<div class='carousel-caption'>
-			<h1>start right here</h1>
+			<h1>Start right here</h1>
 			<br>
-			<button type='button' class='btn btn-default'><a href='#A'>Sign up</a></button>
+			<form action='#A'>
+                            <button class='btn btn-warning'>Sign up</button>
+                        </form>
 		</div>
 		</div> <!---end active -->
 		<div class='item'>
 			<img src='img/sunset.png' style='width:100%;'>
 			<div class='carousel-caption'>
-			<h1>already have an account?</h1>
+			<h1>Already have an account?</h1>
 			<br>
-			<button type='button' class='btn btn-default'><a href='#A'>Login</a></button>
+			<form action='#A'>
+                            <button class='btn btn-warning'>Login</button>
+                        </form>
 		</div>
 		</div>
 		<div class='item' style='width:100%;'>
@@ -165,9 +169,9 @@ date_default_timezone_set('Europe/Helsinki');
             </div>
         </div>
     </div>
-    </row>
-</div>";
+    </row>";
     }
+
 
     ?>
 
