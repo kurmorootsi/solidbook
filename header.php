@@ -1,5 +1,5 @@
 <?php
-session_start();
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -22,11 +22,21 @@ session_start();
             font-size: 1.2em;
             border: 0;
         }
+        .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+            display: block;
+            height: 500px;
+            max-width: 100%;
+            line-height: 1;
+            width: 100%;
+        }
         body{
             background-image: url("https://i.imgur.com/G1Bw3FV.png");
             background-repeat: repeat;
             background-color: #ddd;
-            overflow-x: hidden;
+			overflow-x: hidden;
+        }
+        .container {
+            width: 100%;
         }
         input {
             color: #000;
@@ -45,32 +55,32 @@ session_start();
             background-color: #5E4485;
         }
         .carousel-caption {
-            top: 50%;
-            transform: translateY(-50%);
-            text-transform: uppercase;
-        }
-
-        .full-width {
-            width: 100vw;
-            position: relative;
-            left: 50%;
-            right: 50%;
-            margin-left: -50vw;
-            margin-right: -50vw;
-        }
-
-        p, figure {
-            margin: 0px 0;
-        }
-
-        .btn {
-            font-size: 18px;
-            color: #FFF;
-            padding: 12px 22px;
-            background: #5E44B5;
-            border: 2px solid #FFF;
-        }
-
+			top: 50%;
+			transform: translateY(-50%);
+			text-transform: uppercase;
+		}
+		
+		.full-width {
+			width: 100vw;
+			position: relative;
+			left: 50%;
+			right: 50%;
+			margin-left: -50vw;
+			margin-right: -50vw;
+		}
+		
+		p, figure {
+			margin: 0px 0;
+		}
+		
+		.btn {
+			font-size: 18px;
+			color: #FFF;
+			padding: 12px 22px;
+			background: #5E44B5;
+			border: 2px solid #FFF;
+		}
+		
         textarea {
             resize: none;
         }
@@ -129,12 +139,12 @@ session_start();
                 padding: 10px;
             }
         }
-
-        @media (max-width: 600px) {
+       
+	    @media (max-width: 600px) {
             .carousel-caption {
                 display: none;
             }
-
+			
             #icon {
                 max-width: 150px;
             }
@@ -159,9 +169,9 @@ session_start();
                     <li><form action='index.php'>
                             <button class='btn btn-warning'>Home</button>
                         </form></li>
-                    <?php
-                    if (isset($_SESSION['username'])) {
-                        echo "<li><form action='profile.php'>
+                        <?php
+                        if (isset($_SESSION['username'])) {
+                            echo "<li><form action='profile.php'>
                                         <button class='btn btn-warning'>My Profile</button>
                                       </form></li>
                                              <li><form action='search.php' method='post'>
@@ -173,8 +183,8 @@ session_start();
                                   <li><form action='includes/logout.inc.php'>
                                         <button class='btn btn-danger'>Log Out</button>
                                       </form></li>";
-                    }
-                    ?>
+                        }
+                        ?>
 
                 </ul>
 

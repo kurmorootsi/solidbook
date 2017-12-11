@@ -11,7 +11,7 @@ date_default_timezone_set('Europe/Helsinki');
 
     <?php
     if (isset($_SESSION['username'])) {
-        echo "    
+        echo "    <div class=\"container\">
                         <div class='row'>
                             <div class='col-sm-4'>
                             <h1>Welcome, ".$_SESSION['username']."!</h1>
@@ -56,7 +56,7 @@ date_default_timezone_set('Europe/Helsinki');
 		<div class='item active'>
 		<img src='img/mountains.png' style='width:100%;'>
 		<div class='carousel-caption'>
-			<h1>Start right here</h1>
+			<h1>start right here</h1>
 			<br>
 			<form action='#A'>
                             <button class='btn btn-warning'>Sign up</button>
@@ -169,9 +169,9 @@ date_default_timezone_set('Europe/Helsinki');
             </div>
         </div>
     </div>
-    </row>";
+    </row>
+</div>";
     }
-
 
     ?>
 
